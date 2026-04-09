@@ -1,0 +1,39 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Desktop*/
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-img{
+    border-radius: 50%;
+}
+
+
+/**Breakpoints | ponto de qubra do layout**/
+/*tablets < 992px (768px até 991px)*/
+@media screen and (max-width: 991px) {
+    h1{
+        color: red;
+    }
+    .form-img{
+        display: none;
+    }
+}
+
+/*smartphones < 768px (0px até 767px)*/
+@media screen and (max-width: 767px) {
+    h1{
+        color: blue;
+        background-color: pink;
+    }
+    .form-img
+    {
+        display: unset;
+    }
+}
