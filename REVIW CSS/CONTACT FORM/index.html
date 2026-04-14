@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de documento</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./responsivo/responsivo.css">
+    <link rel="stylesheet" href="./js/script.js">
 </head>
 
 <body>
@@ -44,17 +46,76 @@
 
                 <div class="form-contact__linha">
                     <div class="form-contact__col-a">
-                        <label class="form-contact__label" for="nome">Nome</label>
+                        <label class="form-contact__label" for="telefone">Telefone</label>
+                    </div>
+                    <div class="form-contact__col-b">
+                        <input class="form-contact__input form-contact__input--terco" type="number" id="telefone" name="telefone"
+                            placeholder="+55">
+                        <input class="form-contact__input form-contact__input--terco" type="number" id="ddd"
+                            name="ddd" placeholder="DDD">
+                        <input class="form-contact__input form-contact__input--terco" type="number" id="numero"
+                            name="numero" placeholder="ex: 99999-9999">
+                    </div>
+                </div>
+
+                <div class="form-contact__linha">
+                    <div class="form-contact__col-a">
+                        <label class="form-contact__label" for="Endereço">Endereço</label>
+                    </div>
+                    <div class="form-contact__col-b">
+                        <input class="form-contact__input form-contact__input--quarto" type="number" id="CEP" name="CEP"
+                            placeholder="CEP">
+                        <input class="form-contact__input form-contact__input--metade" type="text" id="Endereço" name="Endereço"
+                            placeholder="rua, avenida, etc...">
+                        <input class="form-contact__input form-contact__input--quarto" type="number" id="numero"
+                            name="numero" placeholder="numero: 1234">
+                    </div>
+                </div>
+
+                <div class="form-contact__linha">
+                    <div class="form-contact__col-a">
+                        <label class="form-contact__label" for="nome"></label>
+                    </div>
+                    <div class="form-contact__col-b">
+                        <input class="form-contact__input form-contact__input--terco" type="text" id="Complemento" name="Complemento"
+                            placeholder="Complemento">
+                        <input class="form-contact__input form-contact__input--terco" type="text" id="Bairro" name="Bairro"
+                            placeholder="Bairro">
+                        <input class="form-contact__input form-contact__input--terco" type="text" id="Cidade" name="Cidade"
+                            placeholder="Cidade">
+                    </div>
+                </div>
+
+                <div class="form-contact__linha">
+                    <div class="form-contact__col-a">
+                        <label class="form-contact__label" for="nome"></label>
                     </div>
                     <div class="form-contact__col-b">
                         <input class="form-contact__input form-contact__input--terco" type="text" id="nome" name="nome"
                             placeholder="Nome">
-                        <input class="form-contact__input form-contact__input--terco" type="text" id="sobrenome"
-                            name="sobrenome" placeholder="Sobrenome">
-                        <input class="form-contact__input form-contact__input--terco" type="text" id="sobrenome"
-                            name="sobrenome" placeholder="Sobrenome">
                     </div>
                 </div>
+
+                <div class="form-contact__linha">
+                    <div class="form-contact__col-a">
+                        <label class="form-contact__label" for="anotacoes">Anotações</label>
+                    </div>
+                    <div class="form-contact__col-b">
+                        <textarea class="form-contact__input form-contact__input--anotacoes" id="anotacoes" name="anotacoes" placeholder="Anotações"></textarea>
+                    </div>
+                </div>
+
+                <div class="form-contact__linha">
+                    <div class="form-contact__col-a"></div>
+
+                    <div class="form-contact__col-b form-contact__col-b--botao">
+                        <button onclick="validarFormulario()" type="submit">Cadastrar</button>
+                        <button type="reset">Limpar</button>
+                    </div>
+                        
+                 </div>
+
+
             </form>
         </div>
     </main>
@@ -63,6 +124,8 @@
     <footer>
         Todos os direitos reservados
     </footer>
+
+    <script src="/js/scricp.js"></script>
 </body>
 
 </html>
