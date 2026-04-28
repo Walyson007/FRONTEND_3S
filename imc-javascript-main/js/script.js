@@ -62,7 +62,7 @@ async function carregarDados() {
             <td>${objCadastro.IMC.toFixed(2)}</td>
             <td>${objCadastro.situacao}</td>
         </tr>`;
-    });
+});
 
     // .then(response => response.json())
     // .then(data => {
